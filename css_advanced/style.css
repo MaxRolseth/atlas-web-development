@@ -1,0 +1,110 @@
+/* Fonts used */
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('fonts/SourceSansPro-Regular.otf') format('opentype');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Source Sans Pro Bold';
+  src: url('fonts/SourceSansPro-Bold.otf') format('opentype');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Spincycle OT';
+  src: url('fonts/spincycle_ot.otf') format('opentype');
+  font-style: normal;
+}
+
+.purple {
+  color: #C271FF;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+
+header {
+  color:#FFFFFF;
+  justify-content: center;
+  align-items: center; /* cross axis */
+  margin: auto;
+}
+
+.logo {
+  float: left;
+}
+.navbar {
+  float: right;
+}
+
+
+body {
+  background-image: url("images/bannerBackground.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: #000;
+  font-family: 'Source Sans Pro';
+  height: 1093px;
+  /*width: 1440px;*/
+  justify-content: center;
+  text-align: center;
+  color: #FFFFFF;
+  padding: auto;
+}
+
+main {
+  
+  max-width: 1440px;
+}
+
+
+div {
+  
+  margin: auto;
+ 
+  /*padding: auto;*/
+}
+.banner {
+  font-family: 'Source Sans Pro';
+}
+.banner h1 {
+  font-size: 120px;
+  color: #FFFFFF;
+  
+}
+
+.banner h2 {
+  font-weight: 300;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+#Pros {
+  display: inline-flex;
+
+  justify-content: center;
+  
+}
+
+.pro {
+  justify-content: center;
+  width: 150px;
+  margin: 2%;
+}
+.pro p, h3 {
+  color: #FFFFFF;
+  text-align: center;
+  
+}
+
+.pro p {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.pro h3 {
+  font-weight: 900;
+}
