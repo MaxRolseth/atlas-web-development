@@ -58,7 +58,17 @@
 
 body {
   font-family: var(--font-family-1);
-  
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin: 0px;
+  line-height: 1.5;
+}
+
+/* removing default styling */
+p,
+ul {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
 }
 
 /* Header and Banner */
@@ -68,90 +78,91 @@ header {
   background-image: url("images/bannerBackground.png");
   background-repeat: no-repeat;
   background-position-x: center;
-  background-size: cover;
+  background-size:cover;
   max-width: 100%;
   height: auto;
-
+  
 }  
 
-nav {
+header .navbar {
+  display: flex;
+  justify-content: space-between;
   padding-top: 1.5rem;
-
 }
 
-.logo {
-  float: left;
-
-}
-
-.navbar {
-  float: right;
+.navbar nav {
   border: 0;
   outline: none;
   padding: .5rem 1rem;
-}
-
-.navbar li {
   height: var(--nav-line-height);
-  display: inline;
-  padding-left: 10px;
 
 }
 
-.navbar a {
+.navbar nav li {
+  display: inline;
+  padding-left: 3rem;
+  font-weight: 500;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.navbar nav a {
   color: #FFFFFF;
   text-decoration: none;
   display: inline;
-  
-
 }
+
+/* Banner */
 
 .banner {
-  margin-top: 155px;
+  margin-top: 100px;
 }
 
-.banner h1, 
-.banner p,
-.banner button {
+.banner-text {
   display: flex;
   justify-content: center;
-  
-  margin-block-start: 0em;
-  margin-block-end: 0em;
+  flex-direction: column;
 }
-
-
 
 .banner h1 {
   font-size: 120px;
   color: #FFFFFF;
-  margin-top: 155px;
   margin-bottom: 0;
-}
-
-.banner button {
-
-  background: none;
-  border: none;
-  
-
-}
-
-.banner h2 {
-  font-weight: 300;
   display: flex;
   justify-content: center;
 }
 
-.learn {
-  font-size: 2rem;
-  margin-top: 168px;
-  margin-bottom: 0;
+.banner ul {
+  border: 0;
+  outline: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
+.banner li {
+  color: #FFFFFF;
+  text-decoration: none;
+  display: inline;
+  padding:0 1rem;
+}
 
+.banner button {
+  background: none;
+  border: none;
+  margin: auto;
+  width: 214px;
+}
 
-#Pros {
+.banner h2 {
+  font-weight: 300;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  margin-top: 168px;
+}
+
+.pros-container {
   display: flex;
   justify-content: space-around;
   
@@ -176,12 +187,6 @@ nav {
 
 .pro h3 {
   font-weight: 900;
-}
-
-
-
-main {
-  
 }
 
 /*Quote section */
@@ -262,6 +267,21 @@ main {
   width: 16rem;
 }
 
+.video-image {
+  max-width: 255px;
+  max-height: 154px;
+  position: relative;
+}
+
+.video-image .overlay {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
 .video-box h5 {
   color: var(--main-color);
   margin-left: 15px;
@@ -285,7 +305,7 @@ main {
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
-  padding-top: 1rem!important;
+  
 
 }
 
@@ -310,6 +330,8 @@ main {
 .membership h2 {
   padding-top: 70px;
   padding-bottom: 58px;
+  font-weight: 300;
+  font-size: 32px;
 }
 
 .membership button {
@@ -398,12 +420,19 @@ footer {
 
 footer .container {
   height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 
 }
 
 footer .logos {
   display: flex;
   justify-content: space-between;
+  
+  padding-top: 1rem;
+  height: 32px;
 }
 
 footer img {
@@ -412,7 +441,9 @@ footer img {
 
 footer .social {
   font-size: 30px;
-  padding: 0 20px;
+  padding: 0 10px;
+  color: var(--white-color);
+  text-decoration: none;
 }
 
 footer a img {
@@ -421,6 +452,5 @@ footer a img {
 
 footer p {
   padding-bottom: 39px;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
+
 }
